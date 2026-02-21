@@ -1,42 +1,57 @@
 # ATM Console Application (C++)
 
-A professional C++ console-based ATM system that simulates real-world Automated Teller Machine (ATM) operations.  
-This application allows users to securely login to their accounts using an account number and PIN code, perform deposits, withdrawals, quick withdrawals, and check their balance. It is designed with a clear menu-driven interface to ensure ease of use and safety during all banking operations.
+A professional C++ console-based ATM system that simulates real-world Automated Teller Machine operations.  
+This application allows clients to securely login using their Account Number and PIN, perform deposits, withdrawals (quick or normal), and check their account balance, all via a simple and interactive console interface.
 
 ---
 
 ## Overview
 
-The ATM Console Application is a fully functional banking simulation for educational purposes. It provides a realistic experience of interacting with an ATM machine, while demonstrating C++ programming concepts such as file handling, structures, enums, input validation, and menu-driven interfaces.
-
-The application stores all client data in a text file (`Clients.txt`), including account numbers, PIN codes, names, phone numbers, and account balances. Users can perform transactions while ensuring that invalid operations (such as withdrawing more than the balance or entering invalid amounts) are prevented.
+This C++ Console Application simulates a simple ATM system.  
+It provides clients with the ability to manage their accounts, perform financial transactions, and monitor balances in a realistic menu-driven environment.  
+All client data is stored in `Clients.txt` for persistence.
 
 ---
 
 ## ✨ Features
 
-- **User Authentication:** Login securely using an account number and PIN code. Only valid accounts can access the system.  
-- **Quick Withdraw:** Withdraw predefined amounts (20, 50, 100, 200, 400, 600, 800, 1000) quickly with one selection.  
-- **Normal Withdraw:** Withdraw a custom amount, must be a multiple of 5, with balance validation.  
-- **Deposit:** Deposit a positive amount to the account with confirmation before processing.  
-- **Check Balance:** View the current account balance at any time.  
-- **Transaction Confirmation:** Every deposit or withdrawal requires confirmation to prevent mistakes.  
-- **Data Storage:** All client information is stored persistently in `Clients.txt`.  
-- **Menu-driven Console UI:** Interactive screens for Quick Withdraw, Normal Withdraw, Deposit, Check Balance, and Logout.  
-- **Input Validation:** Ensures correct numeric input for all operations, preventing negative or invalid values.  
-- **User-friendly Navigation:** Return to the main menu after each operation for smooth workflow.  
+- **User Authentication:** Login system for clients using Account Number and PIN.  
+- **Quick Withdraw:** Select predefined amounts for fast transactions.  
+- **Normal Withdraw:** Withdraw a custom amount (must be a multiple of 5).  
+- **Deposit:** Deposit money into client accounts with confirmation.  
+- **Check Balance:** View current account balance instantly.  
+- **Data Storage:** Client data stored persistently in `Clients.txt`.  
+- **Console UI:** Interactive menu-driven screens for easy navigation.  
+- **Input Validation:** Prevents invalid amounts or incorrect choices.  
 
 ---
 
 ## Files in the Project
 
-- `ATM.cpp` → Main source code implementing all functionality  
-- `Clients.txt` → Data file storing all client accounts, PINs, names, phones, and balances  
-- Optional files (if using Visual Studio):  
-  - `.sln` → Solution file  
-  - `.vcxproj` & `.vcxproj.filters` → Visual Studio project files  
+- `ATM System.cpp` → Main source code  
+- `Clients.txt` → Stores all client information  
+- Optional (for Visual Studio):  
+  - `ATM System.sln` → Solution file  
+  - `ATM System.vcxproj` & `ATM System.vcxproj.filters` → Project files  
+  - `ATM System.rc`, `resource.h` → Resource files  
 
 ---
-## Author
 
-Abd EL Rahman Elsaeedy
+## ▶️ How To Run
+
+1. Open the project in Visual Studio or compile with a C++ compiler.  
+2. Build the project (Ctrl + Shift + B in Visual Studio).  
+3. Run the executable (`F5` in Visual Studio or `./ATM` in terminal).  
+4. Login using a valid client account from `Clients.txt`.  
+5. Navigate the menu to perform Quick Withdraw, Normal Withdraw, Deposit, or Check Balance.  
+
+> **Note:** Ensure `Clients.txt` is in the same folder as the executable for proper operation.
+
+
+## 👤Author
+
+**Abd EL Rahman Elsaeedy**  
+
+---
+
+This project demonstrates practical C++ skills, including file handling, menu-driven programming, input validation, and structured programming. It is ideal as an educational simulation and portfolio showcase for console-based banking applications.
